@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     "rest_framework",
     "djoser",
     "corsheaders",
+    # internal
+    "stocks",
 ]
 
 MIDDLEWARE = [
@@ -126,7 +128,7 @@ CORS_ALLOWED_ORIGINS = [
 
 LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+TIME_ZONE = "Israel"
 
 USE_I18N = True
 
