@@ -3,11 +3,11 @@ export const backendLookup = async (method, endpoint, callback, data) => {
   const headers = {
     "Content-Type": "application/json",
   };
-  const auth_token = localStorage.getItem("token");
+  const auth_token = localStorage.getItem("auth_token");
   if (auth_token) {
     headers.Authorization = `JWT ${auth_token}`;
   }
-  const url = `http://127.0.0.1:8000/api${endpoint}`;
+  const url = endpoint;
   try {
     const response = await axios({
       method: method,

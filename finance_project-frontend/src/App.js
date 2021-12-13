@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Login } from "./user";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AiOutlineStock } from "react-icons/ai";
+import { Login } from "./user";
+import { StockList } from "./stocks";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Login />} />
+            <Route path="/stocks" element={<StockList />} />
           </Routes>
         </BrowserRouter>
       </div>
