@@ -11,7 +11,6 @@ export const Login = () => {
     if (status === 200) {
       localStorage.setItem("auth_token", response.data.access);
       localStorage.setItem("refresh_token", response.data.refresh);
-      sweetalert("success", "Logged In!");
       window.location.href = "/stocks";
     } else {
       sweetalert(
